@@ -58,11 +58,11 @@
 
     <!-- Bootstrap -->
     {% if BOOTSTRAP_THEME %}
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.{{ BOOTSTRAP_THEME }}.css" type="text/css"/>
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.{{ BOOTSTRAP_THEME }}.min.css" type="text/css"/>
     {% else %}
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css" type="text/css"/>
     {% endif %}
-    <link href="{{ SITEURL }}/theme/css/font-awesome.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="{{ SITEURL }}/theme/css/pygments/{{ PYGMENTS_STYLE|default('native') }}.css" rel="stylesheet">
     {% if 'tipue_search' in PLUGINS %}
@@ -79,7 +79,7 @@
         <link href="{{ SITEURL }}/{{ CUSTOM_CSS }}" rel="stylesheet">
     {% endif %}
     {% if SHARIFF %}
-        <link href="{{ SITEURL }}/theme/css/shariff/shariff.css" rel="stylesheet">
+        <link href="{{ SITEURL }}/theme/css/shariff/shariff.min.css" rel="stylesheet">
     {% endif %}
 
     {% if FEED_ALL_ATOM %}
